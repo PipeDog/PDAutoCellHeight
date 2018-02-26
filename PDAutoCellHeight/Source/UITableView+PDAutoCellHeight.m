@@ -40,16 +40,16 @@ NSString *const PDCacheInfoIsDynamicKey = @"isDynamic";
     if (!isDynamic && alreadyCacheInfo) {
         return [self.cacheInfoDict[uniqueId] floatValue];
     } else {
-        CGFloat cellHeight = [self privateHeightForRowAtIndexPath:indexPath config:config];
+        CGFloat cellHeight = [self fetchHeightForRowAtIndexPath:indexPath config:config];
         self.cacheInfoDict[uniqueId] = [NSNumber numberWithDouble:cellHeight];
         return cellHeight;
     }
 }
 
-#pragma mark - Private Methods
-- (CGFloat)privateHeightForRowAtIndexPath:(NSIndexPath *)indexPath config:(PDAutoCellHeightConfigBlock)config {
+#pragma mark - Fetch Height Methods
+- (CGFloat)fetchHeightForRowAtIndexPath:(NSIndexPath *)indexPath config:(PDAutoCellHeightConfigBlock)config {
     UITableViewCell *cell = [self.dataSource tableView:self cellForRowAtIndexPath:indexPath];
-    if (!self.dataSource || !cell/* || !cell.pd_cellBottomView*/) {
+    if (!self.dataSource || !cell) {
         return 0.f;
     }
     if (config) {

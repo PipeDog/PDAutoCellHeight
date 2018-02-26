@@ -9,46 +9,30 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PDAutoCellHeight/ViewController.m"
-            timestampString = "540985794.558883"
+            filePath = "PDAutoCellHeight/Source/UITableView+PDAutoCellHeight.m"
+            timestampString = "541326329.98036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "-pd_heightForRowAtIndexPath:config:cacheInfo:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController tableView:heightForRowAtIndexPath:]"
-                  moduleName = "PDAutoCellHeight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liang/Desktop/PDAutoCellHeight/PDAutoCellHeight/ViewController.m"
-                  timestampString = "540985794.782855"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "308">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__52-[ViewController tableView:heightForRowAtIndexPath:]_block_invoke"
-                  moduleName = "PDAutoCellHeight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liang/Desktop/PDAutoCellHeight/PDAutoCellHeight/ViewController.m"
-                  timestampString = "540985794.7850519"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PDAutoCellHeight/Source/UITableView+PDAutoCellHeight.m"
+            timestampString = "541326330.689321"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-pd_heightForRowAtIndexPath:config:cacheInfo:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

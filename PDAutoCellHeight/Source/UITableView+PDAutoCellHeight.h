@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 FOUNDATION_EXTERN NSString *const PDCacheInfoUniqueIDKey; // Cell id.
-FOUNDATION_EXTERN NSString *const PDCacheInfoIsDynamicKey; // Whether the height will change.
+FOUNDATION_EXTERN NSString *const PDCacheInfoIsDynamicKey; // Whether the height will change. If you want the height to be cached, set value to NO.
 
 typedef void (^PDAutoCellHeightConfigBlock)(__kindof UITableViewCell *sourceCell);
 typedef NSDictionary *(^PDAutoCellHeightCacheInfoBlock)(void);
