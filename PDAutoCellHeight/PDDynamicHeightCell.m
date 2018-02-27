@@ -7,7 +7,7 @@
 //
 
 #import "PDDynamicHeightCell.h"
-#import "UITableViewCell+PDAutoCellHeight.h"
+#import "UITableViewCell+PDCellAutoHeight.h"
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
@@ -24,8 +24,9 @@ static CGFloat const kAroundMargin = 10;
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.pd_cellBottomView = self.contentLabel;
-        self.pd_cellBottomOffset = kAroundMargin;
+        // self.pd_bottomView = self.contentLabel;
+        self.pd_bottomViews = @[self.contentLabel];
+        self.pd_bottomOffset = kAroundMargin;
     }
     return self;
 }

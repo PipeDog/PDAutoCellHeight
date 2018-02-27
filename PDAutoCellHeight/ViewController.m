@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "PDDynamicHeightCell.h"
-#import "UITableView+PDAutoCellHeight.h"
+#import "UITableView+PDCellAutoHeight.h"
 
 static NSString *const kDynamicCellID = @"kDynamicCellID";
 
@@ -32,15 +32,15 @@ static NSString *const kDynamicCellID = @"kDynamicCellID";
 #define NEED_CACHE_CELL_HEIGHT 1
     NSString *text = self.dataArray[indexPath.row % self.dataArray.count];
 #ifdef NEED_CACHE_CELL_HEIGHT
-    return [tableView pd_heightForRowAtIndexPath:indexPath config:^(PDDynamicHeightCell *sourceCell) {
-        [sourceCell loadData:text];
+    return [tableView pd_heightForRowAtIndexPath:indexPath config:^(PDDynamicHeightCell *cell) {
+        [cell loadData:text];
     } cacheInfo:^NSDictionary *{
         return @{PDCacheInfoUniqueIDKey: text,
                  PDCacheInfoIsDynamicKey: @(NO)};
     }];
 #else
-    return [tableView pd_heightForRowAtIndexPath:indexPath config:^(PDDynamicHeightCell *sourceCell) {
-        [sourceCell loadData:text];
+    return [tableView pd_heightForRowAtIndexPath:indexPath config:^(PDDynamicHeightCell *cell) {
+        [cell loadData:text];
     }];
 #endif
 }

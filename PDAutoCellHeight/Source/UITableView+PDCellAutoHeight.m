@@ -1,17 +1,14 @@
 //
-//  UITableView+PDAutoCellHeight.m
+//  UITableView+PDCellAutoHeight.m
 //  PDAutoCellHeight
 //
 //  Created by liang on 2018/2/22.
 //  Copyright © 2018年 PipeDog. All rights reserved.
 //
 
-#import "UITableView+PDAutoCellHeight.h"
-#import "UITableViewCell+PDAutoCellHeight.h"
+#import "UITableView+PDCellAutoHeight.h"
+#import "UITableViewCell+PDCellAutoHeight.h"
 #import <objc/runtime.h>
-
-NSString *const PDCacheInfoUniqueIDKey = @"uniqueID";
-NSString *const PDCacheInfoIsDynamicKey = @"isDynamic";
 
 @interface UITableView ()
 
@@ -19,16 +16,19 @@ NSString *const PDCacheInfoIsDynamicKey = @"isDynamic";
 
 @end
 
-@implementation UITableView (PDAutoCellHeight)
+@implementation UITableView (PDCellAutoHeight)
 
-- (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath config:(PDAutoCellHeightConfigBlock)config {
+- (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
+                               config:(PDCellAutoHeightConfigBlock)config {
     return [self pd_heightForRowAtIndexPath:indexPath config:config cacheInfo:^NSDictionary *{
         return @{PDCacheInfoUniqueIDKey: @"",
                  PDCacheInfoIsDynamicKey: @(NO)};
     }];
 }
 
-- (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath config:(PDAutoCellHeightConfigBlock)config cacheInfo:(PDAutoCellHeightCacheInfoBlock)cacheInfo {
+- (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
+                               config:(PDCellAutoHeightConfigBlock)config
+                            cacheInfo:(PDCellAutoHeightCacheInfoBlock)cacheInfo {
     NSString *uniqueId = [cacheInfo() objectForKey:PDCacheInfoUniqueIDKey];
     BOOL isDynamic = [[cacheInfo() objectForKey:PDCacheInfoIsDynamicKey] boolValue];
     
@@ -47,25 +47,19 @@ NSString *const PDCacheInfoIsDynamicKey = @"isDynamic";
 }
 
 #pragma mark - Fetch Height Methods
-- (CGFloat)fetchHeightForRowAtIndexPath:(NSIndexPath *)indexPath config:(PDAutoCellHeightConfigBlock)config {
+- (CGFloat)fetchHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+                                 config:(PDCellAutoHeightConfigBlock)config {
+    if (!self.dataSource) {
+        return 0.f;
+    }
     UITableViewCell *cell = [self.dataSource tableView:self cellForRowAtIndexPath:indexPath];
-    if (!self.dataSource || !cell) {
+    if (!cell) {
         return 0.f;
     }
     if (config) {
         config(cell);
     }
-    [cell layoutIfNeeded];
-    CGFloat cellHeight = 0.f;
-    if (cell.pd_cellBottomView) {
-        cellHeight = CGRectGetMaxY(cell.pd_cellBottomView.frame);
-    } else {
-        for (UIView *subview in cell.subviews) {
-            cellHeight = MAX(CGRectGetMaxY(subview.frame), cellHeight);
-        }
-    }
-    cellHeight += cell.pd_cellBottomOffset;
-    return cellHeight;
+    return cell.pd_cellHeight;
 }
 
 #pragma mark - Getter Methods
