@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC4F88DA204563F900884344 /* PDCellAutoHeightConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4F88D9204563F900884344 /* PDCellAutoHeightConst.m */; };
 		EC81B17D203EBD5E00F01D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B17C203EBD5E00F01D4F /* AppDelegate.m */; };
 		EC81B180203EBD5E00F01D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B17F203EBD5E00F01D4F /* ViewController.m */; };
 		EC81B183203EBD5E00F01D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81B181203EBD5E00F01D4F /* Main.storyboard */; };
@@ -39,9 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC4F88D720455E2600884344 /* PDCellAutoHeightProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCellAutoHeightProtocol.h; sourceTree = "<group>"; };
-		EC4F88D8204563F900884344 /* PDCellAutoHeightConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCellAutoHeightConst.h; sourceTree = "<group>"; };
-		EC4F88D9204563F900884344 /* PDCellAutoHeightConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCellAutoHeightConst.m; sourceTree = "<group>"; };
 		EC81B178203EBD5D00F01D4F /* PDAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC81B17B203EBD5E00F01D4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC81B17C203EBD5E00F01D4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -151,9 +147,6 @@
 		EC81B1AD203EBD6500F01D4F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EC4F88D720455E2600884344 /* PDCellAutoHeightProtocol.h */,
-				EC4F88D8204563F900884344 /* PDCellAutoHeightConst.h */,
-				EC4F88D9204563F900884344 /* PDCellAutoHeightConst.m */,
 				EC81B1B1203EBD9000F01D4F /* UITableView+PDCellAutoHeight.h */,
 				EC81B1B2203EBD9000F01D4F /* UITableView+PDCellAutoHeight.m */,
 				EC81B1B4203EBD9C00F01D4F /* UITableViewCell+PDCellAutoHeight.h */,
@@ -297,7 +290,6 @@
 			files = (
 				EC81B180203EBD5E00F01D4F /* ViewController.m in Sources */,
 				EC81B1B6203EBD9C00F01D4F /* UITableViewCell+PDCellAutoHeight.m in Sources */,
-				EC4F88DA204563F900884344 /* PDCellAutoHeightConst.m in Sources */,
 				EC81B1B3203EBD9000F01D4F /* UITableView+PDCellAutoHeight.m in Sources */,
 				EC81B18B203EBD5E00F01D4F /* main.m in Sources */,
 				EC81B1B9203EC2B300F01D4F /* PDDynamicHeightCell.m in Sources */,

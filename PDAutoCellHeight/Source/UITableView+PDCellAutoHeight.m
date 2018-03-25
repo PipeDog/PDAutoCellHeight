@@ -10,6 +10,9 @@
 #import "UITableViewCell+PDCellAutoHeight.h"
 #import <objc/runtime.h>
 
+NSString *const PDCacheInfoUniqueIDKey = @"PDCacheInfoUniqueIDKey";
+NSString *const PDCacheInfoIsDynamicKey = @"PDCacheInfoIsDynamicKey";
+
 @interface UITableView ()
 
 @property (nonatomic, strong, readonly) NSMutableDictionary *cacheInfoDict;

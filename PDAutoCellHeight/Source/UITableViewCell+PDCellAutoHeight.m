@@ -38,10 +38,7 @@
 }
 
 - (CGFloat)pd_cellHeight {
-    if (strcmp(dispatch_queue_get_label(dispatch_get_main_queue()),
-               dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL)) != 0) {
-        NSAssert(NO, @"UI operation must be performed in the main thread.");
-    }
+    NSAssert([NSThread isMainThread] == YES, @"UI operation must be performed in the main thread.");
     
     [self layoutIfNeeded];
     

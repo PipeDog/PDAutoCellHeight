@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PDCellAutoHeightProtocol.h"
 
-@interface UITableViewCell (PDCellAutoHeight) <PDCellAutoHeightCellConfiguration>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UITableViewCell (PDCellAutoHeight)
+
+@property (nonatomic, strong) NSArray<UIView *> *pd_bottomViews; ///< Bottom views on the cell.
+@property (nonatomic, strong) UIView *pd_bottomView; ///< Bottom view on the cell.
+@property (nonatomic, assign) CGFloat pd_bottomOffset; ///< Bottom edge of the view at the bottom of the cell.
+@property (nonatomic, assign, readonly) CGFloat pd_cellHeight; ///< Fetch cell height according to pd_bottomView and pd_bottomOffset.
 
 @end
+
+NS_ASSUME_NONNULL_END
