@@ -25,7 +25,7 @@ NSString *const PDCacheInfoIsDynamicKey = @"PDCacheInfoIsDynamicKey";
                                config:(PDCellAutoHeightConfigBlock)config {
     return [self pd_heightForRowAtIndexPath:indexPath config:config cacheInfo:^NSDictionary *{
         return @{PDCacheInfoUniqueIDKey: @"",
-                 PDCacheInfoIsDynamicKey: @(NO)};
+                 PDCacheInfoIsDynamicKey: @(YES)};
     }];
 }
 
