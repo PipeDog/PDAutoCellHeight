@@ -27,6 +27,7 @@ static CGFloat const kAroundMargin = 10;
         // self.pd_bottomView = self.contentLabel;
         self.pd_bottomViews = @[self.contentLabel];
         self.pd_bottomOffset = kAroundMargin;
+        self.pd_enforceFrameLayout = YES;
     }
     return self;
 }

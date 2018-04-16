@@ -24,6 +24,10 @@
     objc_setAssociatedObject(self, @selector(pd_bottomOffset), @(pd_bottomOffset), OBJC_ASSOCIATION_ASSIGN);
 }
 
+- (void)setPd_enforceFrameLayout:(BOOL)pd_enforceFrameLayout {
+    objc_setAssociatedObject(self, @selector(pd_enforceFrameLayout), @(pd_enforceFrameLayout), OBJC_ASSOCIATION_ASSIGN);
+}
+
 #pragma mark - Getter Methods
 - (NSArray<UIView *> *)pd_bottomViews {
     return objc_getAssociatedObject(self, _cmd);
@@ -37,10 +41,16 @@
     return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
 
+- (BOOL)pd_enforceFrameLayout {
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
+
 - (CGFloat)pd_cellHeight {
     NSAssert([NSThread isMainThread] == YES, @"UI operation must be performed in the main thread.");
     
-    [self layoutIfNeeded];
+    if (self.pd_enforceFrameLayout) {
+        [self layoutIfNeeded];
+    }
     
     CGFloat cellHeight = 0.f;
     
