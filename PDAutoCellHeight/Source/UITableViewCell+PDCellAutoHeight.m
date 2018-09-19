@@ -66,6 +66,9 @@
         for (UIView *subview in [self.subviews copy]) {
             cellHeight = MAX(CGRectGetMaxY(subview.frame), cellHeight);
         }
+        for (UIView *subview in [self.contentView.subviews copy]) {
+            cellHeight = MAX(CGRectGetMaxY(subview.frame), cellHeight);
+        }
     }
     cellHeight += self.pd_bottomOffset;
     return cellHeight;
