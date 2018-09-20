@@ -58,11 +58,9 @@
         for (UIView *subview in [self.pd_bottomViews copy]) {
             cellHeight = MAX(CGRectGetMaxY(subview.frame), cellHeight);
         }
-    }
-    else if (self.pd_bottomView) {
+    } else if (self.pd_bottomView) {
         cellHeight = CGRectGetMaxY(self.pd_bottomView.frame);
-    }
-    else {
+    } else {
         for (UIView *subview in [self.subviews copy]) {
             cellHeight = MAX(CGRectGetMaxY(subview.frame), cellHeight);
         }

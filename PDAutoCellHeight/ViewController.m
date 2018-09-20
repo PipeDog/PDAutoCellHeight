@@ -32,14 +32,11 @@ static NSString *const kDynamicCellID = @"kDynamicCellID";
 #define NEED_CACHE_CELL_HEIGHT 1
     NSString *text = self.dataArray[indexPath.row % self.dataArray.count];
 #ifdef NEED_CACHE_CELL_HEIGHT
-    return [tableView pd_heightForRowAtIndexPath:indexPath config:^(PDDynamicHeightCell *cell) {
+    return [tableView pd_heightForRowAtIndexPath:indexPath reuseIdentifier:text configureHandler:^(PDDynamicHeightCell * _Nonnull cell) {
         [cell loadData:text];
-    } cacheInfo:^NSDictionary *{
-        return @{PDCacheInfoUniqueIDKey: text,
-                 PDCacheInfoIsDynamicKey: @(NO)};
     }];
 #else
-    return [tableView pd_heightForRowAtIndexPath:indexPath config:^(PDDynamicHeightCell *cell) {
+    return [tableView pd_heightForRowAtIndexPath:indexPath configureHandler:^(PDDynamicHeightCell * _Nonnull cell) {
         [cell loadData:text];
     }];
 #endif
