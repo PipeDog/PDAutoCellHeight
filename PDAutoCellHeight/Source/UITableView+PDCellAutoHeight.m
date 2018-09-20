@@ -20,21 +20,21 @@
 
 - (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
                      configureHandler:(void (^)(__kindof UITableViewCell * _Nonnull))handler {
-    return [self pd_heightForRowAtIndexPath:indexPath reuseIdentifier:@"" configureHandler:handler];
+    return [self pd_heightForRowAtIndexPath:indexPath sign:@"" configureHandler:handler];
 }
 
 - (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
-                      reuseIdentifier:(NSString *)reuseIdentifier
+                                 sign:(NSString *)sign
                      configureHandler:(void (^)(__kindof UITableViewCell * _Nonnull))handler {
-    if (!reuseIdentifier.length) {
+    if (!sign.length) {
         return [self heightForRowAtIndexPath:indexPath configureHandler:handler];
     }
     
-    CGFloat cellHeight = [self.cellHeights[reuseIdentifier] floatValue];
+    CGFloat cellHeight = [self.cellHeights[sign] floatValue];
     if (cellHeight > 0.f) return cellHeight;
     
     cellHeight = [self heightForRowAtIndexPath:indexPath configureHandler:handler];
-    self.cellHeights[reuseIdentifier] = @(cellHeight);
+    self.cellHeights[sign] = @(cellHeight);
     return cellHeight;
 }
 

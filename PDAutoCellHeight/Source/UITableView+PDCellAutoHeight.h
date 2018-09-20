@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
                      configureHandler:(void (^)(__kindof UITableViewCell *cell))handler;
 
-/// The cell height is calculated according to the reuseIdentifier cache.
+/// The cell height is calculated according to the sign cache.
 - (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
-                      reuseIdentifier:(NSString *)reuseIdentifier
+                      sign:(NSString *)sign
                      configureHandler:(void (^)(__kindof UITableViewCell *cell))handler;
 
 @end
