@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The cell height is calculated according to the sign cache.
 - (CGFloat)pd_heightForRowAtIndexPath:(NSIndexPath *)indexPath
-                      sign:(NSString *)sign
+                                 sign:(NSString *)sign
                      configureHandler:(void (^)(__kindof UITableViewCell *cell))handler;
 
 @end
