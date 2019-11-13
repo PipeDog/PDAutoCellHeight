@@ -13,7 +13,7 @@
 
 #pragma mark - Setter Methods
 - (void)setPd_bottomViews:(NSArray<UIView *> *)pd_bottomViews {
-    objc_setAssociatedObject(self, @selector(pd_bottomViews), pd_bottomViews, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(pd_bottomViews), pd_bottomViews, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (void)setPd_bottomView:(UIView *)pd_bottomView {
