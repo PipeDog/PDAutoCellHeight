@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203EC975FA6539E4E47E8EA9 /* libPods-PDAutoCellHeightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B43196952EB274493906083 /* libPods-PDAutoCellHeightTests.a */; };
+		8EB2C3A214B164B0B3DF9867 /* libPods-PDAutoCellHeight-PDAutoCellHeightUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8A6381A60F2251E129E21D /* libPods-PDAutoCellHeight-PDAutoCellHeightUITests.a */; };
+		C87241CE5EEC81EE8A40FF03 /* libPods-PDAutoCellHeight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353391B50FA682680DEA3CC /* libPods-PDAutoCellHeight.a */; };
 		EC81B17D203EBD5E00F01D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B17C203EBD5E00F01D4F /* AppDelegate.m */; };
 		EC81B180203EBD5E00F01D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B17F203EBD5E00F01D4F /* ViewController.m */; };
 		EC81B183203EBD5E00F01D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81B181203EBD5E00F01D4F /* Main.storyboard */; };
@@ -38,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0706F13FC7CC48AB8EA3FFDC /* Pods-PDAutoCellHeight-PDAutoCellHeightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDAutoCellHeight-PDAutoCellHeightUITests.release.xcconfig"; path = "Target Support Files/Pods-PDAutoCellHeight-PDAutoCellHeightUITests/Pods-PDAutoCellHeight-PDAutoCellHeightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2353391B50FA682680DEA3CC /* libPods-PDAutoCellHeight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDAutoCellHeight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671EE54F44E9B3728A1A8063 /* Pods-PDAutoCellHeight-PDAutoCellHeightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDAutoCellHeight-PDAutoCellHeightUITests.debug.xcconfig"; path = "Target Support Files/Pods-PDAutoCellHeight-PDAutoCellHeightUITests/Pods-PDAutoCellHeight-PDAutoCellHeightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B43196952EB274493906083 /* libPods-PDAutoCellHeightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDAutoCellHeightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FCE3AA288E1041949625E0 /* Pods-PDAutoCellHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDAutoCellHeight.debug.xcconfig"; path = "Target Support Files/Pods-PDAutoCellHeight/Pods-PDAutoCellHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		9076AA3EC96C33D779B215AC /* Pods-PDAutoCellHeightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDAutoCellHeightTests.release.xcconfig"; path = "Target Support Files/Pods-PDAutoCellHeightTests/Pods-PDAutoCellHeightTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB8A6381A60F2251E129E21D /* libPods-PDAutoCellHeight-PDAutoCellHeightUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDAutoCellHeight-PDAutoCellHeightUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCB791A6AACE43B87D77093 /* Pods-PDAutoCellHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDAutoCellHeight.release.xcconfig"; path = "Target Support Files/Pods-PDAutoCellHeight/Pods-PDAutoCellHeight.release.xcconfig"; sourceTree = "<group>"; };
 		EC81B178203EBD5D00F01D4F /* PDAutoCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDAutoCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC81B17B203EBD5E00F01D4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC81B17C203EBD5E00F01D4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +71,7 @@
 		EC81B1B5203EBD9C00F01D4F /* UITableViewCell+PDCellAutoHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PDCellAutoHeight.m"; sourceTree = "<group>"; };
 		EC81B1B7203EC2B300F01D4F /* PDDynamicHeightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDynamicHeightCell.h; sourceTree = "<group>"; };
 		EC81B1B8203EC2B300F01D4F /* PDDynamicHeightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDynamicHeightCell.m; sourceTree = "<group>"; };
+		F12278DEBBCCDEFDD86DC50C /* Pods-PDAutoCellHeightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDAutoCellHeightTests.debug.xcconfig"; path = "Target Support Files/Pods-PDAutoCellHeightTests/Pods-PDAutoCellHeightTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87241CE5EEC81EE8A40FF03 /* libPods-PDAutoCellHeight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203EC975FA6539E4E47E8EA9 /* libPods-PDAutoCellHeightTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +95,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB2C3A214B164B0B3DF9867 /* libPods-PDAutoCellHeight-PDAutoCellHeightUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FBA4F427229228EF5E7A714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86FCE3AA288E1041949625E0 /* Pods-PDAutoCellHeight.debug.xcconfig */,
+				CCCB791A6AACE43B87D77093 /* Pods-PDAutoCellHeight.release.xcconfig */,
+				671EE54F44E9B3728A1A8063 /* Pods-PDAutoCellHeight-PDAutoCellHeightUITests.debug.xcconfig */,
+				0706F13FC7CC48AB8EA3FFDC /* Pods-PDAutoCellHeight-PDAutoCellHeightUITests.release.xcconfig */,
+				F12278DEBBCCDEFDD86DC50C /* Pods-PDAutoCellHeightTests.debug.xcconfig */,
+				9076AA3EC96C33D779B215AC /* Pods-PDAutoCellHeightTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B216CC1D0DED6913D0950A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2353391B50FA682680DEA3CC /* libPods-PDAutoCellHeight.a */,
+				CB8A6381A60F2251E129E21D /* libPods-PDAutoCellHeight-PDAutoCellHeightUITests.a */,
+				7B43196952EB274493906083 /* libPods-PDAutoCellHeightTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC81B16F203EBD5D00F01D4F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +133,8 @@
 				EC81B193203EBD5E00F01D4F /* PDAutoCellHeightTests */,
 				EC81B19E203EBD5E00F01D4F /* PDAutoCellHeightUITests */,
 				EC81B179203EBD5D00F01D4F /* Products */,
+				3FBA4F427229228EF5E7A714 /* Pods */,
+				B216CC1D0DED6913D0950A81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC81B1A4203EBD5E00F01D4F /* Build configuration list for PBXNativeTarget "PDAutoCellHeight" */;
 			buildPhases = (
+				FB18104E12F6F509D443B283 /* [CP] Check Pods Manifest.lock */,
 				EC81B174203EBD5D00F01D4F /* Sources */,
 				EC81B175203EBD5D00F01D4F /* Frameworks */,
 				EC81B176203EBD5D00F01D4F /* Resources */,
@@ -179,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC81B1A7203EBD5E00F01D4F /* Build configuration list for PBXNativeTarget "PDAutoCellHeightTests" */;
 			buildPhases = (
+				C2E94678CFC386CDBF8C1B5B /* [CP] Check Pods Manifest.lock */,
 				EC81B18C203EBD5E00F01D4F /* Sources */,
 				EC81B18D203EBD5E00F01D4F /* Frameworks */,
 				EC81B18E203EBD5E00F01D4F /* Resources */,
@@ -197,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC81B1AA203EBD5E00F01D4F /* Build configuration list for PBXNativeTarget "PDAutoCellHeightUITests" */;
 			buildPhases = (
+				8761619E082EB439D32FE767 /* [CP] Check Pods Manifest.lock */,
 				EC81B197203EBD5E00F01D4F /* Sources */,
 				EC81B198203EBD5E00F01D4F /* Frameworks */,
 				EC81B199203EBD5E00F01D4F /* Resources */,
@@ -282,6 +326,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8761619E082EB439D32FE767 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDAutoCellHeight-PDAutoCellHeightUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E94678CFC386CDBF8C1B5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDAutoCellHeightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB18104E12F6F509D443B283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDAutoCellHeight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC81B174203EBD5D00F01D4F /* Sources */ = {
@@ -454,6 +567,7 @@
 		};
 		EC81B1A5203EBD5E00F01D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86FCE3AA288E1041949625E0 /* Pods-PDAutoCellHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +581,7 @@
 		};
 		EC81B1A6203EBD5E00F01D4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCCB791A6AACE43B87D77093 /* Pods-PDAutoCellHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +595,7 @@
 		};
 		EC81B1A8203EBD5E00F01D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12278DEBBCCDEFDD86DC50C /* Pods-PDAutoCellHeightTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +610,7 @@
 		};
 		EC81B1A9203EBD5E00F01D4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9076AA3EC96C33D779B215AC /* Pods-PDAutoCellHeightTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +625,7 @@
 		};
 		EC81B1AB203EBD5E00F01D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671EE54F44E9B3728A1A8063 /* Pods-PDAutoCellHeight-PDAutoCellHeightUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDAutoCellHeightUITests/Info.plist;
@@ -521,6 +639,7 @@
 		};
 		EC81B1AC203EBD5E00F01D4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0706F13FC7CC48AB8EA3FFDC /* Pods-PDAutoCellHeight-PDAutoCellHeightUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDAutoCellHeightUITests/Info.plist;

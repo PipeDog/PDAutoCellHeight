@@ -8,6 +8,7 @@
 
 #import "PDDynamicHeightCell.h"
 #import "UITableViewCell+PDCellAutoHeight.h"
+#import <Masonry.h>
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
@@ -28,10 +29,26 @@ static CGFloat const kAroundMargin = 10;
         self.pd_bottomViews = @[self.contentLabel];
         self.pd_bottomOffset = kAroundMargin;
         self.pd_enforceFrameLayout = YES;
+        
+        [self createViewHierarchy];
+        [self layoutContentViews];
     }
     return self;
 }
 
+- (void)createViewHierarchy {
+    [self.contentView addSubview:self.contentLabel];
+}
+
+- (void)layoutContentViews {
+    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(kAroundMargin);
+        make.left.mas_equalTo(kAroundMargin);
+        make.width.mas_equalTo(kScreenWidth - kAroundMargin * 2);
+    }];
+}
+
+#pragma mark - Public Methods
 - (void)loadData:(NSString *)text {
     _contentLabel.text = text;
     [_contentLabel sizeToFit];
@@ -46,7 +63,6 @@ static CGFloat const kAroundMargin = 10;
         _contentLabel.font = [UIFont systemFontOfSize:13];
         _contentLabel.numberOfLines = 0;
         _contentLabel.textAlignment = NSTextAlignmentLeft;
-        [self.contentView addSubview:_contentLabel];
     }
     return _contentLabel;
 }
