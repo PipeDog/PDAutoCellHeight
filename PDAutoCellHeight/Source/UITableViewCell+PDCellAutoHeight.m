@@ -24,6 +24,10 @@
     objc_setAssociatedObject(self, @selector(pd_bottomOffset), @(pd_bottomOffset), OBJC_ASSOCIATION_ASSIGN);
 }
 
+- (void)setPd_specifyCellHeight:(CGFloat)pd_specifyCellHeight {
+    objc_setAssociatedObject(self, @selector(pd_specifyCellHeight), @(pd_specifyCellHeight), OBJC_ASSOCIATION_ASSIGN);
+}
+
 - (void)setPd_enforceFrameLayout:(BOOL)pd_enforceFrameLayout {
     objc_setAssociatedObject(self, @selector(pd_enforceFrameLayout), @(pd_enforceFrameLayout), OBJC_ASSOCIATION_ASSIGN);
 }
@@ -41,12 +45,20 @@
     return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
 
+- (CGFloat)pd_specifyCellHeight {
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
+}
+
 - (BOOL)pd_enforceFrameLayout {
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
 - (CGFloat)pd_cellHeight {
     NSAssert([NSThread isMainThread] == YES, @"UI operation must be performed in the main thread.");
+    
+    if (self.pd_specifyCellHeight > 0.f) {
+        return self.pd_specifyCellHeight;
+    }
     
     if (self.pd_enforceFrameLayout) {
         [self layoutIfNeeded];

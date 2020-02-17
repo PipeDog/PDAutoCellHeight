@@ -29,6 +29,7 @@ static CGFloat const kAroundMargin = 10;
          self.pd_bottomView = self.bottomLabel;
 //        self.pd_bottomViews = @[self.contentLabel];
         self.pd_bottomOffset = kAroundMargin;
+//        self.pd_specifyCellHeight = 200.f;
         self.pd_enforceFrameLayout = YES;
         
         [self createViewHierarchy];

@@ -53,6 +53,7 @@ static NSString *const kDynamicCellID = @"kDynamicCellID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PDDynamicHeightCell *cell = [[PDDynamicHeightCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kDynamicCellID];
+    cell.clipsToBounds = YES;
     NSString *text = self.dataArray[indexPath.row % self.dataArray.count];
     [cell loadData:text];
     return cell;

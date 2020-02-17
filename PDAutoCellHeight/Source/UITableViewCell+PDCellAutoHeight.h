@@ -12,10 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableViewCell (PDCellAutoHeight)
 
+@property (nonatomic, assign, readonly) CGFloat pd_cellHeight; ///< Fetch cell height according to pd_bottomView and pd_bottomOffset.
 @property (nonatomic, copy) NSArray<UIView *> *pd_bottomViews; ///< Bottom views on the cell.
 @property (nonatomic, strong) UIView *pd_bottomView; ///< Bottom view on the cell.
 @property (nonatomic, assign) CGFloat pd_bottomOffset; ///< Bottom edge of the view at the bottom of the cell.
-@property (nonatomic, assign, readonly) CGFloat pd_cellHeight; ///< Fetch cell height according to pd_bottomView and pd_bottomOffset.
+@property (nonatomic, assign) CGFloat pd_specifyCellHeight; ///< If the value is greater than 0, the value is used as the height of the cell
 @property (nonatomic, assign) BOOL pd_enforceFrameLayout; ///< Default is NO.
 
 @end
